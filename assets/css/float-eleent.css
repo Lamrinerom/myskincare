@@ -1,0 +1,41 @@
+#getquote-button {
+    position: fixed; 
+    bottom: 85px; 
+    left:5px;
+    z-index: 99999;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 18px;
+    line-height: 1.42;
+    border-radius: 5px;
+    background-color: #4169e1;
+    border-color: #4169e1;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    }
+    .get-quote .gq{
+        font-size: 14px;
+    }
+    #whatsapp-button {
+        position: fixed; 
+        bottom: 47px; 
+        left: 5px;
+        z-index: 99999;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        padding: 0px 8px;
+        font-size: 20px;
+        line-height: 1.42;
+        border-radius: 5px;
+        background-color: #25D366;
+        border-color: #25D366;
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+        }    
+    .whatsaap .wu{
+        font-size: 14px;
+    }
+    .get-quote i{
+        padding: 0 5px;
+    }

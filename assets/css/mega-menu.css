@@ -1,0 +1,88 @@
+/* a{color:#ff6600;} a:hover{color:#000000;}
+.navbar-brand { 
+  width: 70px;
+  height: 50px;
+  background: url('https://www.dropbox.com/static/images/about/dropbox_logo_glyph_2015.svg') no-repeat center center;
+  background-size: 50px;  
+}
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.nav-tabs > li > a, 
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus, 
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: none;
+  border-radius: 0;
+}
+
+.nav-list { border-bottom: 1px solid #eee; }
+.nav-list > li { 
+  padding: 20px 15px 15px;
+  border-left: 1px solid #eee; 
+}
+.nav-list > li:last-child { border-right: 1px solid #eee; }
+.nav-list > li > a:hover { text-decoration: none; }
+.nav-list > li > a > span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mega-dropdown { position: static !important; }
+.mega-dropdown-menu {
+  padding: 20px 15px 15px;
+  text-align: center;
+  width: 100%;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+      margin-top: 2px;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    height: auto;
+  }
+  .dropdown-menu .column_drop{
+  }
+  .dropdown-menu .category_section_drop{
+   
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .dropdown-menu .category_section_drop ul li{
+    border: 1px solid #ececec;
+    margin-bottom: 5px;
+    padding: 1px 7px;
+    border-radius: 5px;
+  }
+  .dropdown-menu .category_section_drop ul li a{
+    color: #1d1218;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Outfit", Arial, sans-serif !important;
+  } */
