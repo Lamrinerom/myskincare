@@ -311,7 +311,7 @@ h6{
 	/* border: 1px solid #e1e1e1; */
 	font-size:16px;
 	/* background: #fff; */
-	border-radius:8px;
+	border-radius:4px;
 	transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -2810,7 +2810,7 @@ body {
 
 .main-slider .slide{
 	position:relative;
-	padding:166px 0px;
+	padding:183px 0px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -2953,7 +2953,7 @@ body {
 	margin-left: -30px;
 }
 .owl-carousel .owl-stage-outer { 
-  height: 370px !important;
+  height: 356px !important;
   display: grid !important;
   }
 .main-slider .owl-dots .owl-dot{
@@ -2998,7 +2998,7 @@ body {
 	top:50%;
 	z-index:1;
 	width:100%;
-	margin-top:-20px;
+	margin-top:-30px;
 }
 
 .main-slider .owl-nav .owl-prev{
@@ -4177,9 +4177,18 @@ body {
   display: block;
   margin-top: 0px;
   color: #92949b !important;
-	font-size: 12px;
-	padding: 0;
-	line-height: 20px;
+  font-size: 12px;
+  padding: 0;
+  line-height: 20px;
+}
+.category_name label{
+  text-align: start;
+  display: block;
+  margin-top: 0px;
+  color: #92949b !important;
+  font-size: 12px;
+  padding: 0;
+  line-height: 20px;
 }
 .product-card-member .image-box .social-icon-two{
 	position:absolute;
@@ -4465,6 +4474,54 @@ body {
 	line-height:1.8em;
 	margin-top:8px;
 }
+/* Tooltip styling */
+/* .tooltip {
+  position: absolute;
+  background: #e1e1e1;
+  color: red;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  white-space: nowrap;
+  opacity: 1;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 100;
+  width: 66px;
+  left: -241px;
+}
+.tooltip.show {
+  opacity: 1;
+  transform: translateY(6px);
+} */
+ /* [tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+[tooltip]::before {
+  content: attr(tooltip);
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  transform: translateY(-50%);
+  background: #222;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+[tooltip]:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-4px);
+} */
+
+
 [tooltip] {
 	position: relative; /* opinion 1 */
 	/* left: 10px; */
@@ -5074,8 +5131,8 @@ body {
 	content: "\F3E9";
 	font-family: 'Bootstrap-Icons';
 	margin-right: 4px;
-	color: #378722;
-	font-size: 17px;
+	color: #6e4ba0;
+	font-size: 20px;
 	position: relative;
 	top: 2px;
 }
@@ -5083,8 +5140,8 @@ body {
 	content: "\F618";
 	font-family: 'Bootstrap-Icons';
 	margin-right: 4px;
-	color: #378722;
-	font-size: 17px;
+	color: #6e4ba0;
+	font-size: 20px;
 	position: relative;
 	top: 2px;
 }
@@ -5092,8 +5149,8 @@ body {
 	content: "\F84C";
 	font-family: 'Bootstrap-Icons';
 	margin-right: 4px;
-	color: #378722;
-	font-size: 17px;
+	color: #6e4ba0;
+	font-size: 20px;
 	position: relative;
 	top: 2px;
 }
@@ -5122,7 +5179,13 @@ body {
 }
 .main-footer .footer-widget .afterlogo{
 	display: block;
-	text-align: center;
+	text-align: start;
+}
+.main-footer .footer-widget .afterlogo .hs{
+	color: #6e4aa1;
+}
+.main-footer .footer-widget .afterlogo .hy{
+	color: #4698ad;
 }
 .main-footer .footer-widget h5:after{
 	/* position:absolute;
@@ -5167,7 +5230,7 @@ body {
 	margin-right: auto;
 }
 .socia_icons .list_icon .main_list-icons a{
- color: #7c818b;
+ color: #4899af !important;
  font-size: 20px;
 }
 .call_section .icon_here{
@@ -5521,6 +5584,8 @@ body {
 	position: relative;
 	padding: 10px 0px 10px 0;
 	border-top: 1px solid #ecf0f4;
+	margin-top: 10px;
+
 }
 
 .main-footer .footer-bottom .column{
@@ -15482,7 +15547,7 @@ align-items:start;
 	width: 320px !important;
 }
 .offysc .offcanvas-header{
-	background-color: #368722;
+	background-color: #439ab0;
 	padding: 12px 24px;
 }
 .offysc .left-open{
@@ -15523,7 +15588,7 @@ align-items:start;
 	/* border: 3px dotted #afd58a; */
 	padding: 5px 19px;
 	border-radius: 50px;
-	color: #83ba02;
+	color: #439ab0;
 	line-height: 40px;
 }
 .bigdeals .bdback .bigdeals-content p{
@@ -15535,7 +15600,7 @@ align-items:start;
 .bigdeals .bdback .bigdeals-content .shopnow-btn{
 	display: inline-block;
 	padding: 10px 30px;
-	background-color:#82b901;
+	background-color:#704da6;
 	/* background-color: #00308F; */
 	color: #fff !important;
 	border-radius: 5px;
