@@ -409,10 +409,10 @@
 					items:2
 				},
 				1200:{
-					items:2
+					items:3
 				},
 				1400:{
-					items:3
+					items:4
 				}
 			}
 		});    		
@@ -425,8 +425,8 @@
 			nav:true,
 			autoHeight: true,
 			smartSpeed: 1000,
-			autoplay: 5000,
-			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+			// autoplay: 5000,
+			navText: [ '' ],
 			responsive:{
 				0:{
 					items:0
@@ -438,13 +438,13 @@
 					items:2
 				},
 				1024:{
-					items:2
-				},
-				1200:{
 					items:3
 				},
-				1400:{
+				1200:{
 					items:4
+				},
+				1400:{
+					items:7
 				}
 			}
 		});    		
@@ -457,7 +457,7 @@
 			nav:true,
 			autoHeight: true,
 			smartSpeed: 500,
-			autoplay: 5000,
+			// autoplay: 5000,
 			navText: [ '', '' ],
 			animateOut: 'slideOutDown',
 			animateIn: 'flipInX',
@@ -476,6 +476,41 @@
 				},
 				1200:{
 					items:3
+				}
+			}
+		});    	
+	
+	}
+
+	if ($('.eight-item-carousel').length) {
+		$('.eight-item-carousel').owlCarousel({
+			loop:true,
+			margin:0,
+			nav:true,
+			autoHeight: true,
+			smartSpeed: 500,
+			// autoplay: 5000,
+			navText: [ '', '' ],
+			animateOut: 'slideOutDown',
+			animateIn: 'flipInX',
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:2
+				},
+				800:{
+					items:3
+				},
+				1024:{
+					items:4
+				},
+				1200:{
+					items:6
+				},
+				1400:{
+					items:7
 				}
 			}
 		});    	
@@ -785,14 +820,14 @@ const imageElement = document.querySelector('.pimg');
 
 // ✅ Use forward slashes and include the first image as current
 const images = [
-  'assets/image/product/facewash.png',
-  'assets/image/product/gentleexpliotor.png',
-  'assets/image/product/makeupremover.png',
-  'assets/image/product/mask.png',
-  'assets/image/product/moisturiser.png',
-  'assets/image/product/serum.png',
-  'assets/image/product/sunscreen.png',
-  'assets/image/product/wipes.png'
+  'assets/image/product/auraskinlabqluta+b3brightingsoap.png',
+  'assets/image/product/collagen10000mg4x.png',
+  'assets/image/product/creamyhairmask.png',
+  'assets/image/product/osufimoisturiser.png',
+  'assets/image/product/fairyhoneysoap.png',
+  'assets/image/product/l-gluta5berryplusdietarysupplementproduct.png',
+  'assets/image/product/vittamincollagenmixplus.png',
+  'assets/image/product/yanahairoil.png'
 ];
 
 let currentIndex = 0;
@@ -820,3 +855,4 @@ setInterval(changeImage, 4000);
 
 // Add to cart description cart functionality
 	
+
