@@ -425,7 +425,7 @@
 			nav:true,
 			autoHeight: true,
 			smartSpeed: 1000,
-			// autoplay: 5000,
+			autoplay: 5000,
 			navText: [ '' ],
 			responsive:{
 				0:{
@@ -489,7 +489,7 @@
 			nav:true,
 			autoHeight: true,
 			smartSpeed: 500,
-			// autoplay: 5000,
+			autoplay: 5000,
 			navText: [ '', '' ],
 			animateOut: 'slideOutDown',
 			animateIn: 'flipInX',
