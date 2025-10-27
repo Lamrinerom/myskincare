@@ -7837,7 +7837,7 @@ p .about-links:hover{
 
 ***/
 .contactus{
-	padding: 40px 0;
+	padding: 0 0 40px;
 	background-color: #f9fbfe;
 	margin-bottom: 40px;
 }
@@ -16474,4 +16474,8 @@ a.active .custom-radio {
 	margin-bottom: 2px;
 	border-radius: 8px;
 	overflow: hidden;
+}
+
+.aboutus, .blog, .allproduct, .blogdetails-section, .contactus, .fp-section, .login-section, .privacy-policy-section, .details, .register-section, .tandc, .tmo-section{
+  margin-top: 15px;
 }
