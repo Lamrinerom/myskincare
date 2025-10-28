@@ -672,111 +672,6 @@
 
 let availableKeywords = 
 [   "Blast Freezers",
-	"-32°C Blast Freezer BFR 2200",
-	"-32°C Blast Freezer BFR 2201",
-	"-40°C Blast Freezer BFR 2300",
-	"-40°C Blast Freezer BFR 2301",
-	"-45°C Blast Freezer BFR 2400",
-	"-45°C Blast Freezer BFR 2401",
-	"-45°C Blast Freezer BFR 2402",
-	"-45°C Blast Freezer BFR 2403",
-	"Freeze Dryers",
-	"Manifold Freeze Dryer MFDQ 1000",
-	"Manifold Freeze Dryer MFDQ 1001",
-	"Manifold Freeze Dryer MFDQ 1002",
-	"Manifold Freeze Dryer MFDQ 2000",
-	"Manifold Freeze Dryer MFDQ 2001",
-	"Manifold Freeze Dryer MFDQ 2002",
-	"Manifold Top press Freeze Dryer MTPQ 1000",
-	"Manifold Top press Freeze Dryer MTPQ 1001",
-	"Manifold Top press Freeze Dryer MTPQ 2000",
-	"Manifold Top press Freeze Dryer MTPQ 2001",
-	"Standard Freeze Dryer SFDQ 1000",
-	"Standard Freeze Dryer SFDQ 1001",
-	"Standard Freeze Dryer SFDQ 1002",
-	"Standard Freeze Dryer SFDQ 2000",
-	"Standard Freeze Dryer SFDQ 2001",
-	"Standard Freeze Dryer SFDQ 2002",
-	"T-type Freeze Dryer TFDQ 1000",
-	"T-type Freeze Dryer TFDQ 2000",
-	"Top press Freeze Dryer TPDQ 1000",
-	"Top press Freeze Dryer TPDQ 1001",
-	"Top press Freeze Dryer TPDQ 2000",
-	"Top press Freeze Dryer TPDQ 2001",
-	"Manifold Freeze Dryer MFDQ 1000","Manifold Freeze Dryer MFDQ 1001","Manifold Freeze Dryer MFDQ 1002",
-	"Manifold Freeze Dryer MFDQ 2000","Manifold Freeze Dryer MFDQ 2001","Manifold Freeze Dryer MFDQ 2000",
-	"Large scale freeze dryer LFQ 8100","Large scale freeze dryer LFQ 8101","Large scale freeze dryer LFQ 8102","Large scale freeze dryer LFQ 8103","Large scale freeze dryer LFQ 8104",
-	"Pilot Scale Freeze Dryer PSFQ 8210","Pilot Scale Freeze Dryer PSFQ 8211","Pilot Scale Freeze Dryer PSFQ 8212",
-	"Standard Pilot Freeze Dryer PSFQ 1300","Standard Pilot Freeze Dryer PSFQ 1301",
-	"Standard Pilot Freeze Dryer PSFQ 2100","Standard Pilot Freeze Dryer PSFQ 3700","Standard Pilot Freeze Dryer PSFQ 4320","Standard Pilot Freeze Dryer PSFQ 5720",
-	"Standard Pilot Freeze Dryer PSFQ 6480","Standard Pilot Freeze Dryer PSFQ 6481","Standard Pilot Freeze Dryer PSFQ 7640","Standard Pilot Freeze Dryer PSFQ 7641",
-	"Top press Pilot Freeze Dryer PTPQ 1700","Top press Pilot Freeze Dryer PTPQ 1701","Top press Pilot Freeze Dryer PTPQ 2700","Top press Pilot Freeze Dryer PTPQ 3200",
-	"Top press Pilot Freeze Dryer PTPQ 4670","Top press Pilot Freeze Dryer PTPQ 5140",
-	"Medical Mobile Coolers",
-	"Medical Mobile Cooler MMC 4000","Medical Mobile Cooler MMC 4001","Medical Mobile Cooler MMC 4002",
-	"Portable Refrigerators",
-	"Portable Refrigerator PRF 1000","Portable Refrigerator PRF 1001","Portable Refrigerator PRF 1002","Portable Refrigerator PRF 1003","Portable Refrigerator PRF 1004","Portable Refrigerator PRF 1005","Portable Refrigerator PRF 1006","Portable Refrigerator PRF 1007","Portable Refrigerator PRF 1008",
-	"Solar Freezer",
-	"Blood Bank Refrigerator",
-	"Cooling- Incubator",
-	"Island Freezer",
-	"Combined Island Freezer ISF 3000","Combined Island Freezer ISF 3001","Combined Island Freezer ISF 3002",
-	"Island Freezer ISF 1000","Island Freezer ISF 1001","Island Freezer ISF 1002",
-	"Island Freezer ISF 2000","Island Freezer ISF 2001",
-	"Pharmacy Refrigerator",
-	"Solar Refrigerators ",
-	"Chiller",
-	"Air-cooled chiller ACQ 1000","Air-cooled chiller ACQ 1002","Air-cooled chiller ACQ 1003","Air-cooled chiller ACQ 1004","Air-cooled chiller ACQ 1005","Air-cooled chiller ACQ 1006","Air-cooled chiller ACQ 1007","Air-cooled chiller ACQ 1008","Air-cooled chiller ACQ 1009","JAir-cooled chiller ACQ 1010","Air-cooled chiller ACQ 1011","Air-cooled chiller ACQ 1012","Air-cooled chiller ACQ 1013","Air-cooled chiller ACQ 1014","Air-cooled chiller ACQ 1015",
-	"Water cooled chiller WCQ 2000","Water cooled chiller WCQ 2001","Water cooled chiller WCQ 2002","Water cooled chiller WCQ 2003","Water cooled chiller WCQ 2004","Water cooled chiller WCQ 2005","Water cooled chiller WCQ 2006","Water cooled chiller WCQ 2007","Water cooled chiller WCQ 2008","Water cooled chiller WCQ 2009","Water cooled chiller WCQ 2010","Water cooled chiller WCQ 2011","Water cooled chiller WCQ 2012","Water cooled chiller WCQ 2013",
-	"Combined Refrigerators and Freezers",
-	"Combined Refrigerator and Freezer CRF 2000","Combined Refrigerator and Freezer CRF 2001","Combined Refrigerator and Freezer CRF 2002","Combined Refrigerator and Freezer CRF 2003",
-	"Combined Refrigerator and Freezer CRF 3000","Combined Refrigerator and Freezer CRF 3001",
-	"Combined Refrigerator and Freezer CRF 4000","Combined Refrigerator and Freezer CRF 4001",
-	"Ice Makers",
-	"Bullet Ice Maker",
-	"Bullet ice maker BIQ 1000","Bullet ice maker BIQ 1001","Bullet ice maker BIQ 1002","Bullet ice maker BIQ 1003","Bullet ice maker BIQ 1004",
-	"Crescent Ice Maker",
-	"Crescent ice maker CIQ 1000","Crescent ice maker CIQ 1001","Crescent ice maker CIQ 1002","Crescent ice maker CIQ 1003",
-	"Cube Ice Maker",
-	"Cube ice maker CUBQ 1000","Cube ice maker CUBQ 1001","Cube ice maker CUBQ 1002","Cube ice maker CUBQ 1003","Cube ice maker CUBQ 1004","Cube ice maker CUBQ 1005","Cube ice maker CUBQ 1006","Cube ice maker CUBQ 1007",
-	"Flake Ice Makers",
-	"Flake ice maker SFLQ 1000","Flake ice maker SFLQ 1001","Flake ice maker SFLQ 1002","Flake ice maker SFLQ 1003","Flake ice maker SFLQ 1004","Flake ice maker SFLQ 1005","Flake ice maker SFLQ 1006","Flake ice maker SFLQ 1007","Flake ice maker SFLQ 1008","Flake ice maker SFLQ 1009","Flake ice maker SFLQ 1010","Flake ice maker SFLQ 1011","Flake ice maker SFLQ 1012","Flake ice maker SFLQ 1013",
-	"Laboratory Freezers",
-	"-105 °C Freezers",
-	"-105°C Chest Cryogenic Freezer CRQ 1400","-105°C Chest Cryogenic Freezer CRQ 1401","-105°C Chest Cryogenic Freezer CRQ 1402",
-	"-136 °C Freezers",
-	"-136°C Chest Cryogenic Freezer CRQ 4440",
-	"-152 °C Freezers",
-	"-152°C Chest Cryogenic Freezer CRQ 5500","-152°C Chest Cryogenic Freezer CRQ 5501",
-	"-164 °C Freezers",
-	"-164°C Chest Cryogenic Freezer CRQ 6500",
-	"-25 °C Freezers",
-	"-25°C Chest Freezer CFQ 1001","-25°C Chest Freezer CFQ 1002","-25°C Chest Freezer CFQ 1003",
-	"-25°C Chest Freezer CFQ 2000","-25°C Chest Freezer CFQ 2001","-25°C Chest Freezer CFQ 2002",
-	"-25°C Upright Freezer UFQ 1001","-25°C Upright Freezer UFQ 1002","-25°C Upright Freezer UFQ 1003","-25°C Upright Freezer UFQ 1004","-25°C Upright Freezer UFQ 1005",
-	"-40 °C Freezers",
-	"-40°C Chest Freezer CHQ 3001","-40°C Chest Freezer CHQ 3002","-40°C Chest Freezer CHQ 3003",
-	"-40°C Upright Freezer UPQ 3001","-40°C Upright Freezer UPQ 3002","-40°C Upright Freezer UPQ 3003","-40°C Upright Freezer UPQ 3004","-40°C Upright Freezer UPQ 3005","-40°C Upright Freezer UPQ 3006","-40°C Upright Freezer UPQ 3007","-40°C Upright Freezer UPQ 3001 ",
-	"-86 °C Freezers",
-	"Cascade System Upright",
-	"-86°C Cascade System Upright Freezer CUQ 6660","-86°C Cascade System Upright Freezer CUQ 6661","-86°C Cascade System Upright Freezer CUQ 6662","-86°C Cascade System Upright Freezer CUQ 6663","-86°C Cascade System Upright Freezer CUQ 6664",
-	"Dual System Upright",
-	"-86°C Dual System Upright Freezer DUQ 5550","-86°C Dual System Upright Freezer DUQ 5551","-86°C Dual System Upright Freezer DUQ 5552",
-	"Mixed Gas Upright",
-	"-86°C Mixed Gas Upright Freezer MUQ 7770","-86°C Mixed Gas Upright Freezer MUQ 7771","-86°C Mixed Gas Upright Freezer MUQ 7772","-86°C Mixed Gas Upright Freezer MUQ 7773","-86°C Mixed Gas Upright Freezer MUQ 7774","-86°C Mixed Gas Upright Freezer MUQ 7775","-86°C Mixed Gas Upright Freezer MUQ 7776","-86°C Mixed Gas Upright Freezer MUQ 7777","-86°C Mixed Gas Upright Freezer MUQ 7778","-86°C Mixed Gas Upright Freezer MUQ 7779",
-	"Plasma Freezers",
-	"Blood Plasma Chest Freezer BPF 6000","Blood Plasma Upright Freezer BPF 6001 ","Blood Plasma Freezer BPF 7000 ","Blood Plasma Freezer BPF 7001",
-	"Refrigerated Circulator",
-	"10 L Refrigerated Circulator",
-	"Refrigerated Circulator RCQ-2000","Refrigerated Circulator RCQ-2001","Refrigerated Circulator RCQ-2002","Refrigerated Circulator RCQ-2003","Refrigerated Circulator RCQ-2004","Refrigerated Circulator RCQ-2005","Refrigerated Circulator RCQ-2006","Refrigerated Circulator RCQ-2007",
-	"100 L Refrigerated Circulator",
-	"Refrigerated Circulator RCQ-8000","Refrigerated Circulator RCQ-8001","Refrigerated Circulator RCQ-8002","Refrigerated Circulator RCQ-8003","Refrigerated Circulator RCQ-8004",
-	"20 L Refrigerated Circulator",
-	"Refrigerated Circulator RCQ-3000","Refrigerated Circulator RCQ-3001","Refrigerated Circulator RCQ-3002","Refrigerated Circulator RCQ-3003","Refrigerated Circulator RCQ-3004","Refrigerated Circulator RCQ-3005",
-	"30 L Refrigerated Circulator",
-	"Refrigerated Circulator RCQ-4000","Refrigerated Circulator RCQ-4001","Refrigerated Circulator RCQ-4002","Refrigerated Circulator RCQ-4003","Refrigerated Circulator RCQ-4004","Refrigerated Circulator RCQ-4005",
-	"40 L Refrigerated Circulator",
-	"Refrigerated Circulator RCQ-5000","Refrigerated Circulator RCQ-5001","Refrigerated Circulator RCQ-5002","Refrigerated Circulator RCQ-5003","Refrigerated Circulator RCQ-5004",
 	"5 L Refrigerated Circulator",
 	"Refrigerated Circulator RCQ-1000","Refrigerated Circulator RCQ-1001","Refrigerated Circulator RCQ-1002","Refrigerated Circulator RCQ-1003","Refrigerated Circulator RCQ-1004","Refrigerated Circulator RCQ-1005","Refrigerated Circulator RCQ-1006","Refrigerated Circulator RCQ-1007",
 	];
@@ -833,26 +728,173 @@ const images = [
 let currentIndex = 0;
 
 function changeImage() {
-  // Fade out
   imageElement.style.opacity = 0;
 
   setTimeout(() => {
-    // Change to next image
     currentIndex = (currentIndex + 1) % images.length;
     imageElement.src = images[currentIndex];
-
-    // Fade in
     imageElement.style.opacity = 1;
   }, 500);
 }
 
 // Smooth transition
-imageElement.style.transition = 'opacity 0.6s ease-in-out';
-
-// Change every 4 seconds
+// imageElement.style.transition = 'opacity 0.6s ease-in-out';
 setInterval(changeImage, 4000);
 
 
-// Add to cart description cart functionality
-	
+// ----------------------------------------------------------------------------
 
+let cart = [];
+
+		document.querySelectorAll(".cd_btn").forEach(btn => {
+		btn.addEventListener("click", () => {
+			const name = btn.dataset.name;
+			const price = parseFloat(btn.dataset.price);
+			const image = btn.dataset.image;
+			const existing = cart.find(item => item.name === name);
+
+			// Add item to cart or update
+			if (existing) {
+			existing.qty += 1;
+			existing.total = existing.qty * existing.price;
+			} else {
+			cart.push({ name, price, image, qty: 1, total: price });
+			}
+
+			updateCart();
+			showToast({ name, price, image });
+
+			// Tooltip logic (change text on click)
+			const tooltipWrapper = btn.closest("[tooltip]");
+			if (tooltipWrapper) {
+			tooltipWrapper.setAttribute("tooltip", "Added");
+
+			// Hold for 1 second, then reset
+			setTimeout(() => {
+				tooltipWrapper.setAttribute("tooltip", "Add to Cart");
+			}, 1000);
+			}
+		});
+		});
+
+		function updateCart() {
+		const cartItems = document.getElementById("cart-items");
+		const cartCountElements = document.querySelectorAll(".cart-count");
+		const cartTotal = document.getElementById("cart-total");
+		cartItems.innerHTML = "";
+		let total = 0;
+
+		cart.forEach((item, index) => {
+			total += item.total;
+			const div = document.createElement("div");
+			div.classList.add("cart-item");
+			div.innerHTML = `
+			<img src="${item.image}" alt="">
+			<div class="cart-item-info">
+			<h6>${item.name}</h6>
+			<p>৳${item.price} × ${item.qty} = ৳${item.total}</p>
+			<div class="qty-btn">
+			<button onclick="changeQty(${index}, -1)">-</button>
+			<span>${item.qty}</span>
+			<button onclick="changeQty(${index}, 1)">+</button>
+			<button class="removeoffpro" onclick="removeItem(${index})"></button>
+			</div>
+			</div>`;
+			cartItems.appendChild(div);
+		});
+
+		const totalQuantity = cart.reduce((sum, item) => sum + item.qty, 0);
+		cartCountElements.forEach(el => el.textContent = totalQuantity);
+		cartTotal.textContent = total;
+		}
+
+		function changeQty(index, delta) {
+		cart[index].qty += delta;
+		if (cart[index].qty <= 0) cart.splice(index, 1);
+		else cart[index].total = cart[index].qty * cart[index].price;
+		updateCart();
+		}
+
+		function removeItem(index) {
+		cart.splice(index, 1);
+		updateCart();
+		}
+
+		function showToast({ name, price, image }) {
+		const toastContainer = document.getElementById("toast-container");
+		const toast = document.createElement("div");
+		toast.style.cssText = `
+			background:#fff;
+			color:#222;
+			border-radius:6px;
+			box-shadow:0 2px 16px rgba(0,0,0,0.15);
+			padding: 8px 12px;
+			margin-bottom:14px;
+			display:flex;
+			align-items:center;
+			min-width:220px;
+			max-width:280px;
+			font-size:15px;
+			animation:toastIn 0.4s;
+		`;
+		toast.innerHTML = `
+			<img src="${image}" alt="" style="width:75px;height:75px;border-radius:5px;object-fit:cover;margin-right:12px;">
+			<div>
+			<strong style="font-size:15px;">${name}</strong><br>
+			<span style="font-size:14px;">৳${price}</span>
+			</div>
+		`;
+
+		toastContainer.appendChild(toast);
+
+		setTimeout(() => {
+			toast.remove();
+		}, 3500); // Toast hides after 3.5s
+		}
+
+
+
+		// ----------------------------------------------------------
+
+			var searchTexts = [
+			"Search Product..!",
+			"Cooling Product..!",
+			"Explore Categories..!",
+			"Search Laboratory Product..!"
+		];
+
+		var Index = 0;
+		var timeOut;
+		var char = 0;
+
+		$('.main-search').attr('placeholder', '|');
+
+		(function typeIt() {
+			var txt = searchTexts[currentIndex];
+			var txtLen = txt.length;
+			var humanize = Math.round(Math.random() * (300 - 30)) + 30;
+
+			timeOut = setTimeout(function () {
+				char++;
+				var type = txt.substring(0, char);
+				$('.main-search').attr('placeholder', type + '|');
+				typeIt();
+
+				if (char == txtLen) {
+					setTimeout(function () {
+						deletePlaceholder();
+						currentIndex = (currentIndex + 1) % searchTexts.length; // Move to the next text
+						char = 0; // Reset char for the new text
+						typeIt(); // Start typing the new text
+					}, 2000); // Wait for 1 second before moving to the next text
+				}
+
+			}, humanize);
+		}());
+
+		function deletePlaceholder() {
+			var placeholder = $('.main-search').attr('placeholder');
+			$('.main-search').attr('placeholder', placeholder.slice(0, -1));
+		}
+
+		// -----------------------------------------------------
