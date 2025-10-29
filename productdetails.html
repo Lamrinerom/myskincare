@@ -5,24 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product Details | www.yourskincare.uk</title>
     <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
-    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
-	<link href="assets/css/style.css" rel="stylesheet">
-	<link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/responsive.css" rel="stylesheet">
-	<link href="assets/css/enquiry-form.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-	<link id="theme-color-file" href="assets/css/default-theme.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/float-eleent.css">
-    <link rel="stylesheet" href="assets/css/add-to-cart-btn.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body class="hidden-bar-wrapper">
-	<div id="google_translate_element" style="display:none;"></div>
     <div class="page-wrapper"> 
         <header class="main-header header-style-two"> 
 			<div class="header-top">  
@@ -1054,6 +1047,7 @@
 											<li><a href="returnspolicy.html">Return Policy</a></li>
 											<li><a href="termsandconditions.html">Terms & Condition</a></li>
 											<li><a href="trackmyorder.html">Track My Order</a></li>
+											<li><a href="faq.html">FAQ</a></li>
 										</ul>
 									</div>
 								</div>
@@ -1148,28 +1142,6 @@
 				</div>
 			</div>
     	</div>
-	<script>
-		function googleTranslateElementInit() {
-			new google.translate.TranslateElement({
-				pageLanguage: 'en',
-				autoDisplay: false
-			}, 'google_translate_element');
-		}
-
-		document.addEventListener('click', function(e) {
-			if (e.target.classList.contains('langSelect')) {
-				e.preventDefault();
-				const lang = e.target.getAttribute('data-lang');
-				document.querySelector("#currentLang").innerText = e.target.innerText;
-
-				const select = document.querySelector(".goog-te-combo");
-				if (select) {
-					select.value = lang;
-					select.dispatchEvent(new Event("change"));
-				}
-			}
-		});
-	</script>
 	<script>
     /* ---------- Slider: images + video ---------- */
     const thumbs = document.querySelectorAll('#thumbs .thumb');
@@ -1347,180 +1319,147 @@
 		showNextText();
   </script>
   
-	<script>
-		// Get all thumbnail elements
-		const thumbss = document.querySelectorAll('#thumbs .thumb');
-
-		thumbss.forEach(thumb => {
-		thumb.addEventListener('click', () => {
-			// Remove 'active' class from all
-			thumbss.forEach(t => t.classList.remove('active'));
-			// Add to current
-			thumb.classList.add('active');
-			// Optional: scroll selected thumbnail into center view
-			thumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-			// Here, handle changing main image/video if needed
-		});
-
-		// For touch devices, optional: touch highlight and scroll
-		thumb.addEventListener('touchstart', () => {
-			thumbss.forEach(t => t.classList.remove('active'));
-			thumb.classList.add('active');
-			thumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-		});
-		});
-	</script>
+	
 	<script>
 		// Product data (set this based on the product on the page!)
-	const productData = {
-	name: "Yana Hair Oil", // Example, set dynamically if needed
-	price: 650,
-	image: "assets/image/product/yanahairoil.png"
-	};
+		const productData = {
+		name: "Yana Hair Oil", // Example, set dynamically if needed
+		price: 650,
+		image: "assets/image/product/yanahairoil.png"
+		};
 
-	let cart = []; // Shared cart array for this session
+		let cart = []; // Shared cart array for this session
 
-	// Quantity selector logic
-	const qtyInput = document.getElementById("qtyInput");
-	const incBtn = document.getElementById("incBtn");
-	const decBtn = document.getElementById("decBtn");
+		// Quantity selector logic
+		const qtyInput = document.getElementById("qtyInput");
+		const incBtn = document.getElementById("incBtn");
+		const decBtn = document.getElementById("decBtn");
 
-	incBtn.addEventListener("click", () => {
-	let qty = parseInt(qtyInput.value, 10) || 1;
-	qtyInput.value = Math.min(qty + 1, 99); // Max out at 99
-	});
-	decBtn.addEventListener("click", () => {
-	let qty = parseInt(qtyInput.value, 10) || 1;
-	qtyInput.value = Math.max(qty - 1, 1); // Minimum 1
-	});
-	qtyInput.addEventListener("input", () => {
-	let val = parseInt(qtyInput.value, 10);
-	qtyInput.value = isNaN(val) || val < 1 ? 1 : Math.min(val, 99);
-	});
-
-	// Add to Cart button logic
-	document.getElementById("addToCartBtn").addEventListener("click", () => {
-	let qty = parseInt(qtyInput.value, 10) || 1;
-	// See if product already in cart
-	let existing = cart.find(item => item.name === productData.name);
-	if (existing) {
-		existing.qty += qty;
-		existing.total = existing.qty * existing.price;
-	} else {
-		cart.push({
-		name: productData.name,
-		price: productData.price,
-		image: productData.image,
-		qty: qty,
-		total: qty * productData.price
+		incBtn.addEventListener("click", () => {
+		let qty = parseInt(qtyInput.value, 10) || 1;
+		qtyInput.value = Math.min(qty + 1, 99); // Max out at 99
 		});
-	}
-	updateCart();
-	showToast(productData, qty);
-	});
+		decBtn.addEventListener("click", () => {
+		let qty = parseInt(qtyInput.value, 10) || 1;
+		qtyInput.value = Math.max(qty - 1, 1); // Minimum 1
+		});
+		qtyInput.addEventListener("input", () => {
+		let val = parseInt(qtyInput.value, 10);
+		qtyInput.value = isNaN(val) || val < 1 ? 1 : Math.min(val, 99);
+		});
 
-	// Update header cart count and offcanvas content
-	function updateCart() {
-	// Update count
-	document.getElementById("cart-count").textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+		// Add to Cart button logic
+		document.getElementById("addToCartBtn").addEventListener("click", () => {
+		let qty = parseInt(qtyInput.value, 10) || 1;
+		// See if product already in cart
+		let existing = cart.find(item => item.name === productData.name);
+		if (existing) {
+			existing.qty += qty;
+			existing.total = existing.qty * existing.price;
+		} else {
+			cart.push({
+			name: productData.name,
+			price: productData.price,
+			image: productData.image,
+			qty: qty,
+			total: qty * productData.price
+			});
+		}
+		updateCart();
+		showToast(productData, qty);
+		});
 
-	// Fill offcanvas cart
-	const cartItems = document.getElementById("cart-items");
-	const cartTotal = document.getElementById("cart-total");
-	cartItems.innerHTML = "";
-	let totalVal = 0;
+		// Update header cart count and offcanvas content
+		function updateCart() {
+		// Update count
+		document.getElementById("cart-count").textContent = cart.reduce((sum, item) => sum + item.qty, 0);
 
-	cart.forEach((item, idx) => {
-		totalVal += item.total;
-		const div = document.createElement("div");
-		div.className = "cart-item";
-		div.innerHTML = `
-		<img src="${item.image}" alt="">
-		<span style="margin-left:8px;">${item.name}</span>
-		<span style="margin-left:8px;">৳${item.price} × ${item.qty} = ৳${item.total}</span>
-		<button onclick="removeItem(${idx})" style="margin-left:10px;"></button>
+		// Fill offcanvas cart
+		const cartItems = document.getElementById("cart-items");
+		const cartTotal = document.getElementById("cart-total");
+		cartItems.innerHTML = "";
+		let totalVal = 0;
+
+		cart.forEach((item, idx) => {
+			totalVal += item.total;
+			const div = document.createElement("div");
+			div.className = "cart-item";
+			div.innerHTML = `
+			<img src="${item.image}" alt="">
+			<span style="margin-left:8px;">${item.name}</span>
+			<span style="margin-left:8px;">৳${item.price} × ${item.qty} = ৳${item.total}</span>
+			<button onclick="removeItem(${idx})" style="margin-left:10px;"></button>
+			`;
+			cartItems.appendChild(div);
+		});
+		cartTotal.textContent = "Total: ৳" + totalVal;
+		}
+
+		// Remove item from cart (global for button event)
+		window.removeItem = function(index) {
+		cart.splice(index, 1);
+		updateCart();
+		}
+
+		// Simple toast popup (bottom right)
+		function showToast(product, qty) {
+		let container = document.getElementById("toast-container");
+		if (!container) {
+			container = document.createElement("div");
+			container.id = "toast-container";
+			container.style.cssText = "position:fixed;bottom:30px;right:30px;z-index:999;";
+			document.body.appendChild(container);
+		}
+		const toast = document.createElement("div");
+		toast.style.cssText = `
+			background:#fff;
+			color:#222;
+			border-radius:7px;
+			box-shadow:0 2px 16px rgba(0,0,0,0.14);
+			padding:14px 18px;
+			margin-bottom:15px;
+			display:flex;
+			align-items:center;
+			min-width:210px;
+			max-width:270px;
+			font-size:15px;
+			animation:toastIn 0.35s;
 		`;
-		cartItems.appendChild(div);
-	});
-	cartTotal.textContent = "Total: ৳" + totalVal;
-	}
+		toast.innerHTML = `
+			<img src="${product.image}" alt="" style="width:42px;height:42px;border-radius:4px;object-fit:cover;margin-right:11px;">
+			<div>
+			<strong>${product.name}</strong><br>
+			<span>Quantity: ${qty}</span><br>
+			<span>৳${product.price * qty}</span>
+			</div>
+		`;
+		container.appendChild(toast);
+		setTimeout(() => { toast.remove(); }, 3500);
 
-	// Remove item from cart (global for button event)
-	window.removeItem = function(index) {
-	cart.splice(index, 1);
-	updateCart();
-	}
+		// Add animation if missing
+		if (!document.getElementById('spin-animation')) {
+			const style = document.createElement("style");
+			style.id = "spin-animation";
+			style.innerHTML = `@keyframes toastIn { from{transform: translateY(40px); opacity:0;} to{transform:translateY(0);opacity:1;} }`;
+			document.head.appendChild(style);
+		}
+		}
 
-	// Simple toast popup (bottom right)
-	function showToast(product, qty) {
-	let container = document.getElementById("toast-container");
-	if (!container) {
-		container = document.createElement("div");
-		container.id = "toast-container";
-		container.style.cssText = "position:fixed;bottom:30px;right:30px;z-index:999;";
-		document.body.appendChild(container);
-	}
-	const toast = document.createElement("div");
-	toast.style.cssText = `
-		background:#fff;
-		color:#222;
-		border-radius:7px;
-		box-shadow:0 2px 16px rgba(0,0,0,0.14);
-		padding:14px 18px;
-		margin-bottom:15px;
-		display:flex;
-		align-items:center;
-		min-width:210px;
-		max-width:270px;
-		font-size:15px;
-		animation:toastIn 0.35s;
-	`;
-	toast.innerHTML = `
-		<img src="${product.image}" alt="" style="width:42px;height:42px;border-radius:4px;object-fit:cover;margin-right:11px;">
-		<div>
-		<strong>${product.name}</strong><br>
-		<span>Quantity: ${qty}</span><br>
-		<span>৳${product.price * qty}</span>
-		</div>
-	`;
-	container.appendChild(toast);
-	setTimeout(() => { toast.remove(); }, 3500);
-
-	// Add animation if missing
-	if (!document.getElementById('spin-animation')) {
-		const style = document.createElement("style");
-		style.id = "spin-animation";
-		style.innerHTML = `@keyframes toastIn { from{transform: translateY(40px); opacity:0;} to{transform:translateY(0);opacity:1;} }`;
-		document.head.appendChild(style);
-	}
-	}
-
-	// Initialize (clear and reset on page load)
-	document.addEventListener("DOMContentLoaded", function() {
-	cart = [];
-	document.getElementById("cart-count").textContent = "0";
-	updateCart();
-	});
+		// Initialize (clear and reset on page load)
+		document.addEventListener("DOMContentLoaded", function() {
+		cart = [];
+		document.getElementById("cart-count").textContent = "0";
+		updateCart();
+		});
 
 	</script>
-	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- <script src="assets/js/add-to-cart-btn.js"></script> -->
 	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<!-- <script src="assets/js/bootstrap.min.js"></script> -->
-	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="assets/js/jquery.fancybox.js"></script>
 	<script src="assets/js/appear.js"></script>
 	<script src="assets/js/owl.js"></script>
 	<script src="assets/js/wow.js"></script>
 	<script src="assets/js/slick.js"></script>
-	<!-- <script src="assets/js/jquery-ui.js"></script> -->
 	<script src="assets/js/script.js"></script>
-	<!-- <script src="assets/js/mixitup.js"></script> -->
-
-	<script src="assets/js/color-settings.js"></script>
-  
-		
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

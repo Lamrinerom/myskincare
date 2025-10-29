@@ -856,45 +856,63 @@ let cart = [];
 
 		// ----------------------------------------------------------
 
-			var searchTexts = [
-			"Search Product..!",
-			"Cooling Product..!",
-			"Explore Categories..!",
-			"Search Laboratory Product..!"
-		];
 
-		var Index = 0;
-		var timeOut;
-		var char = 0;
+		// -----------------------------------------------------scroll text
 
-		$('.main-search').attr('placeholder', '|');
+		const texts = document.querySelectorAll('.scroll-text');
+		let index = 0;
 
-		(function typeIt() {
-			var txt = searchTexts[currentIndex];
-			var txtLen = txt.length;
-			var humanize = Math.round(Math.random() * (300 - 30)) + 30;
+		function showNextText() {
+		// Hide all texts
+		texts.forEach(t => {
+			t.style.opacity = 0;
+			t.style.animation = 'none';
+		});
 
-			timeOut = setTimeout(function () {
-				char++;
-				var type = txt.substring(0, char);
-				$('.main-search').attr('placeholder', type + '|');
-				typeIt();
+		// Show current text with animation
+		const current = texts[index];
+		current.style.opacity = 1;
+		current.style.animation = 'moveLeft 20s linear forwards';
 
-				if (char == txtLen) {
-					setTimeout(function () {
-						deletePlaceholder();
-						currentIndex = (currentIndex + 1) % searchTexts.length; // Move to the next text
-						char = 0; // Reset char for the new text
-						typeIt(); // Start typing the new text
-					}, 2000); // Wait for 1 second before moving to the next text
-				}
+		// Move to next text
+		index = (index + 1) % texts.length;
 
-			}, humanize);
-		}());
-
-		function deletePlaceholder() {
-			var placeholder = $('.main-search').attr('placeholder');
-			$('.main-search').attr('placeholder', placeholder.slice(0, -1));
+		// Repeat after animation ends
+		setTimeout(showNextText, 13000);
 		}
 
-		// -----------------------------------------------------
+		showNextText();
+
+		// ---------------------------------------------FAQ
+        document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!expanded));
+
+            const answer = document.getElementById(button.getAttribute('aria-controls'));
+
+            if (!expanded) {
+            answer.removeAttribute('hidden');
+            setTimeout(() => {
+                answer.classList.add('show');
+            }, 10);
+            } else {
+            answer.classList.remove('show');
+            answer.addEventListener('transitionend', () => {
+                if (!answer.classList.contains('show')) {
+                answer.setAttribute('hidden', '');
+                }
+            }, { once: true });
+            }
+        });
+
+        // Keyboard accessibility: toggle on Enter or Space keypress
+        button.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            button.click();
+            }
+        });
+        });
+// -----------------------------------------------Product description
+
