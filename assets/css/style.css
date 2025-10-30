@@ -2978,7 +2978,12 @@ body {
 	background-repeat:no-repeat;
 	background-position:center center;
 }
+@media (min-width: 1600px) and (max-width:2000px){
+  .main-slider .slide{
+	padding:270px 0px;
+}
 
+}
 .main-slider .title{
 	position:relative;
 	color:#13b5ea;
