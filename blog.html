@@ -95,7 +95,7 @@
 									<div class="offcanvas-body left-open">
 									<div class="panel_content">
 										<div class="panel_item">
-											<img src="assets/image/user (4).png" alt="" width="18" style="margin-right: 24px;">
+											<img src="assets/image/user (4).png" alt="" width="18" style="margin-right: 8px;">
 											<a href="login.html" class="mobile_main">Account</a>
 										</div>
 										<div class="panel_item">
@@ -236,15 +236,11 @@
 											</ul>
 										</nav>
 										<hr class="mobile_menu_line">
-										<div class="popular_category_section">
-											<!-- <div class="sub_panel_title">
-												<span class="panel_name">Popular Categories</span>
-												<a href="all-category.html" class="see_all">See All</a>
-											</div> -->
+										<!-- <div class="popular_category_section">
 											<div class="offban">
-												<img src="assets/image/product/1.jpg" alt="">
+												<img src="assets/image/product/glutacollagenBoosterwhiteBathsaltVitamin.png" alt="">
 											</div>
-										</div> 
+										</div>  -->
 									</div>
 									</div>
 								</div>
@@ -516,7 +512,8 @@
 													<ul class="dropdown-menu company-dropdown-menu style-one mt-2" aria-labelledby="dropdownMenu2">
 														<li><a href="aboutus.html" class="hicenter">About Us</a></li>
 														<li><a href="contactus.html" class="hicenter">Contct Us</a></li>
-														<li><a href="termsandconditions.html" class="hicenter">Terms and Conditions</a></li><li><a href="#" class="hicenter">Help Center</a></li>
+														<li><a href="termsandconditions.html" class="hicenter">Terms and Conditions</a></li>
+														<li><a href="faq.html" class="hicenter">FAQ</a></li>
 														<li><a href="trackmyorder.html" class="hicenter">Check Orders</a></li>
 													</ul>
 												</div>
@@ -977,6 +974,28 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasMycart" aria-labelledby="offcanvasMycartLabel">
+			<div class="offcanvas-header mycart_header">
+			<p class="offcanvas-title mycart_title" id="offcanvasMycartLabel">Shopping Cart</p>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body mycart_body">
+				<div id="cart-items" class="cart-items">
+					<div class="cartempty">
+						<img src="assets/image/empty3.png" alt="">
+						<p>You haven’t added any products yet.</p>
+						<a href="index.html" class="shopnow">Shop Now</a>
+					</div>
+					<!-- Cart items will be dynamically added here -->
+				</div>
+				<div class="cart-total">
+					<strong>Total:</strong> <span class="fpcart" id="cart-total">৳ 0</span>
+				</div>
+				<button id="checkout-btn" class="checkout-button">
+					Proceed to Checkout
+				</button>
+			</div>
 		</div>
     </div>
 	<script src="assets/js/jquery.js"></script>

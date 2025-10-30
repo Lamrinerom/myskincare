@@ -95,7 +95,7 @@
 									<div class="offcanvas-body left-open">
 									<div class="panel_content">
 										<div class="panel_item">
-											<img src="assets/image/user (4).png" alt="" width="18" style="margin-right: 24px;">
+											<img src="assets/image/user (4).png" alt="" width="18" style="margin-right: 8px;">
 											<a href="login.html" class="mobile_main">Account</a>
 										</div>
 										<div class="panel_item">
@@ -236,15 +236,11 @@
 											</ul>
 										</nav>
 										<hr class="mobile_menu_line">
-										<div class="popular_category_section">
-											<!-- <div class="sub_panel_title">
-												<span class="panel_name">Popular Categories</span>
-												<a href="all-category.html" class="see_all">See All</a>
-											</div> -->
+										<!-- <div class="popular_category_section">
 											<div class="offban">
-												<img src="assets/image/product/1.jpg" alt="">
+												<img src="assets/image/product/glutacollagenBoosterwhiteBathsaltVitamin.png" alt="">
 											</div>
-										</div> 
+										</div>  -->
 									</div>
 									</div>
 								</div>
@@ -516,7 +512,8 @@
 													<ul class="dropdown-menu company-dropdown-menu style-one mt-2" aria-labelledby="dropdownMenu2">
 														<li><a href="aboutus.html" class="hicenter">About Us</a></li>
 														<li><a href="contactus.html" class="hicenter">Contct Us</a></li>
-														<li><a href="termsandconditions.html" class="hicenter">Terms and Conditions</a></li><li><a href="#" class="hicenter">Help Center</a></li>
+														<li><a href="termsandconditions.html" class="hicenter">Terms and Conditions</a></li>
+														<li><a href="faq.html" class="hicenter">FAQ</a></li>
 														<li><a href="trackmyorder.html" class="hicenter">Check Orders</a></li>
 													</ul>
 												</div>
@@ -850,15 +847,15 @@
 							</div>
 
 							<div class="pincode-wrap">
-							<div style="display:flex; gap:8px; align-items:center;">
-								<i class="fa-solid fa-truck"></i>
-								<strong>Check Product Availability</strong>
-							</div>
-							<div style="margin-top:8px;">
-								<input id="pincodeInput" placeholder="Enter Pincode" />
-								<button id="checkPinBtn">Check Now</button>
-							</div>
-							<div class="pincode-result" id="pincodeResult"></div>
+								<div class="pw">
+									<i class="fa-solid fa-truck"></i>
+									<strong>Check Product Availability</strong>
+								</div>
+								<div class="pwipcn">
+									<input id="pincodeInput" placeholder="Enter Pincode" />
+									<button id="checkPinBtn">Check Now</button>
+								</div>
+								<div class="pincode-result" id="pincodeResult"></div>
 							</div>
 
 							<div class="accordion" id="accordion">
@@ -933,59 +930,63 @@
 
 					<!-- REVIEWS -->
 					<div class="reviews">
-					<div class="reviews-top">
-						<div style="min-width:180px; text-align:center;">
-						<div class="rating-big">4.3</div>
-						<div class="small-muted">out of 5</div>
-						<div style="margin-top:8px;"><span style="color:#f5b400;font-size:18px;">★★★★★</span></div>
-						<div class="small-muted" style="margin-top:6px;">Based on 120 reviews</div>
+						<div class="reviews-top">
+							<div class="rt">
+								<div class="rating-big">4.3</div>
+								<div class="small-muted">out of 5</div>
+								<div class="rtstar"><span>★★★★★</span></div>
+								<div class="small-muted" style="margin-top:6px;">Based on 120 reviews</div>
+							</div>
+
+							<div class="rating-bars">
+								<div class="bar-row">
+									<div class="label">5 star</div>
+									<div class="bar">
+										<span style="width: 60%;"></span>
+									</div>
+									<div class="rbrating">72</div>
+								</div>
+								<div class="bar-row"><div class="label">4 star</div><div class="bar"><span style="width:20%"></span></div><div class="rbrating">24</div></div>
+								<div class="bar-row"><div class="label">3 star</div><div class="bar"><span style="width:8%"></span></div><div class="rbrating">10</div></div>
+								<div class="bar-row"><div class="label">2 star</div><div class="bar"><span style="width:2%"></span></div><div class="rbrating">2</div></div>
+								<div class="bar-row"><div class="label">1 star</div><div class="bar"><span style="width:0%"></span></div><div class="rbrating">12</div></div>
+							</div>
+
+							<div class="wareview">
+								<button class="write-review-btn" id="toggleReviewBtn">Write a review</button>
+							</div>
 						</div>
 
-						<div class="rating-bars">
-						<div class="bar-row"><div class="label">5 star</div><div class="bar"><span style="width:60%"></span></div><div style="width:32px;text-align:right;color:var(--muted)">72</div></div>
-						<div class="bar-row"><div class="label">4 star</div><div class="bar"><span style="width:20%"></span></div><div style="width:32px;text-align:right;color:var(--muted)">24</div></div>
-						<div class="bar-row"><div class="label">3 star</div><div class="bar"><span style="width:8%"></span></div><div style="width:32px;text-align:right;color:var(--muted)">10</div></div>
-						<div class="bar-row"><div class="label">2 star</div><div class="bar"><span style="width:2%"></span></div><div style="width:32px;text-align:right;color:var(--muted)">2</div></div>
-						<div class="bar-row"><div class="label">1 star</div><div class="bar"><span style="width:0%"></span></div><div style="width:32px;text-align:right;color:var(--muted)">12</div></div>
+						<!-- Sort/Filter placeholder -->
+						<div style="margin-top:12px; color:var(--muted);">Pictures First ▼</div>
+
+						<!-- Reviews list -->
+						<div class="review-list" id="reviewList">
+							<!-- static example review -->
+							<div class="review-item">
+							<h4>★★★★★ <br> Tanmana Pal <span class="small-muted" style="margin-left:8px;">Verified</span></h4>
+							<div class="small-muted">Tea Tree Pore Clarifying Gel Cleanser 150ml — 11/26/2024</div>
+							<p>Love the product — removes oil and dirt with little quantity. Highly recommend for acne-prone skin.</p>
+							</div>
+
+							<div class="review-item">
+							<h4>★★★★★ <br> Shailja Ojha <span class="small-muted" style="margin-left:8px;">Verified</span></h4>
+							<div class="small-muted">11/22/2024</div>
+							<p>Amazing! It worked well on my skin — reduced breakouts and left my face feeling clean without over-drying.</p>
+							</div>
 						</div>
 
-						<div style="min-width:200px; text-align:center;">
-						<button class="write-review-btn" id="toggleReviewBtn">Write a review</button>
+						<!-- Review Form -->
+						<div class="review-form" id="reviewForm">
+							<input id="reviewName" placeholder="Your name" />
+							<input id="reviewTitle" placeholder="Title (e.g., 'Works great')" />
+							<textarea id="reviewText" rows="4" placeholder="Write your review"></textarea>
+							<div class="bottomform">
+							<input id="reviewProduct" placeholder="Product name (optional)" style="flex:1" />
+							<button id="submitReviewBtn" class="submitreview">Submit Review</button>
+							</div>
 						</div>
 					</div>
-
-					<!-- Sort/Filter placeholder -->
-					<div style="margin-top:12px; color:var(--muted);">Pictures First ▼</div>
-
-					<!-- Reviews list -->
-					<div class="review-list" id="reviewList">
-						<!-- static example review -->
-						<div class="review-item">
-						<h4>★★★★★ &nbsp; Tanmana Pal <span class="small-muted" style="margin-left:8px;">Verified</span></h4>
-						<div class="small-muted">Tea Tree Pore Clarifying Gel Cleanser 150ml — 11/26/2024</div>
-						<p>Love the product — removes oil and dirt with little quantity. Highly recommend for acne-prone skin.</p>
-						</div>
-
-						<div class="review-item">
-						<h4>★★★★★ &nbsp; Shailja Ojha <span class="small-muted" style="margin-left:8px;">Verified</span></h4>
-						<div class="small-muted">11/22/2024</div>
-						<p>Amazing! It worked well on my skin — reduced breakouts and left my face feeling clean without over-drying.</p>
-						</div>
-					</div>
-
-					<!-- Review Form -->
-					<div class="review-form" id="reviewForm">
-						<input id="reviewName" placeholder="Your name" />
-						<input id="reviewTitle" placeholder="Title (e.g., 'Works great')" />
-						<textarea id="reviewText" rows="4" placeholder="Write your review"></textarea>
-						<div style="display:flex; gap:8px; align-items:center;">
-						<input id="reviewProduct" placeholder="Product name (optional)" style="flex:1" />
-						<button id="submitReviewBtn">Submit Review</button>
-						</div>
-					</div>
-
-					</div>
-
 				</div>
             </div>
         </section>
@@ -1127,21 +1128,28 @@
 				</div>
 			</footer>
 		</div>
-		<div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasMycart" aria-labelledby="offcanvasMycartLabel" style="width: 450px;">
+		<div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasMycart" aria-labelledby="offcanvasMycartLabel">
 			<div class="offcanvas-header mycart_header">
-				<h5 class="offcanvas-title mycart_title" id="offcanvasMycartLabel">Shopping Cart</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body mycart_body">
-					<div id="cart-items" class="cart-items">
-						<!-- Cart items will be dynamically added here -->
-					</div>
-					<div class="cart-total">
-						<strong>Total:</strong> <span class="fpcart" id="cart-total">$0</span>
-					</div>
-				</div>
+			<p class="offcanvas-title mycart_title" id="offcanvasMycartLabel">Shopping Cart</p>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
-    	</div>
+			<div class="offcanvas-body mycart_body">
+				<div id="cart-items" class="cart-items">
+					<div class="cartempty">
+						<img src="assets/image/empty3.png" alt="">
+						<p>You haven’t added any products yet.</p>
+						<a href="index.html" class="shopnow">Shop Now</a>
+					</div>
+					<!-- Cart items will be dynamically added here -->
+				</div>
+				<div class="cart-total">
+					<strong>Total:</strong> <span class="fpcart" id="cart-total">৳ 0</span>
+				</div>
+				<button id="checkout-btn" class="checkout-button">
+					Proceed to Checkout
+				</button>
+			</div>
+		</div>
 	<script>
     /* ---------- Slider: images + video ---------- */
     const thumbs = document.querySelectorAll('#thumbs .thumb');

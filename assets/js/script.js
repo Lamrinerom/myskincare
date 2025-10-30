@@ -491,8 +491,10 @@
 			smartSpeed: 500,
 			autoplay: 5000,
 			navText: [ '', '' ],
-			animateOut: 'slideOutDown',
-			animateIn: 'flipInX',
+			// animateOut: 'slideOutDown',
+			// animateIn: 'flipInX',
+			animateOut: 'fadeOut',
+    		animateIn: 'fadeIn',
 			responsive:{
 				0:{
 					items:1
@@ -513,8 +515,9 @@
 					items:7
 				}
 			}
+			
 		});    	
-	
+		
 	}
 	
 	// Sponsors Carousel
@@ -805,7 +808,7 @@ let cart = [];
 
 		const totalQuantity = cart.reduce((sum, item) => sum + item.qty, 0);
 		cartCountElements.forEach(el => el.textContent = totalQuantity);
-		cartTotal.textContent = total;
+		cartTotal.textContent = `৳${total.toFixed(2)}`;
 		}
 
 		function changeQty(index, delta) {
@@ -850,9 +853,14 @@ let cart = [];
 		setTimeout(() => {
 			toast.remove();
 		}, 3500); // Toast hides after 3.5s
+		document.getElementById('checkout-btn').addEventListener('click', () => {
+		// Replace this placeholder action with your actual checkout logic
+		alert('Proceeding to checkout...');
+		// Example: window.location.href = "/checkout"; // redirect to checkout page
+		});
 		}
 
-
+		
 
 		// ----------------------------------------------------------
 
