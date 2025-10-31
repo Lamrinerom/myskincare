@@ -781,7 +781,7 @@ let cart = [];
 		});
 
 		function updateCart() {
-		const cartItems = document.getElementById("cart-items");
+		const cartItems = document.getElementById("cart-itemss");
 		const cartCountElements = document.querySelectorAll(".cart-count");
 		const cartTotal = document.getElementById("cart-total");
 		cartItems.innerHTML = "";
@@ -795,7 +795,7 @@ let cart = [];
 			<img src="${item.image}" alt="">
 			<div class="cart-item-info">
 			<h6>${item.name}</h6>
-			<p>৳${item.price} × ${item.qty} = ৳${item.total}</p>
+			<p>৳ ${item.price} × ${item.qty} = ৳ ${item.total}</p>
 			<div class="qty-btn">
 			<button onclick="changeQty(${index}, -1)">-</button>
 			<span>${item.qty}</span>
@@ -808,7 +808,7 @@ let cart = [];
 
 		const totalQuantity = cart.reduce((sum, item) => sum + item.qty, 0);
 		cartCountElements.forEach(el => el.textContent = totalQuantity);
-		cartTotal.textContent = `৳${total.toFixed(2)}`;
+		cartTotal.textContent = `৳ ${total.toFixed(2)}`;
 		}
 
 		function changeQty(index, delta) {
@@ -844,7 +844,7 @@ let cart = [];
 			<img src="${image}" alt="" style="width:75px;height:75px;border-radius:5px;object-fit:cover;margin-right:12px;">
 			<div>
 			<strong style="font-size:15px;">${name}</strong><br>
-			<span style="font-size:14px;">৳${price}</span>
+			<span style="font-size:14px;">৳ ${price}</span>
 			</div>
 		`;
 
@@ -853,6 +853,7 @@ let cart = [];
 		setTimeout(() => {
 			toast.remove();
 		}, 3500); // Toast hides after 3.5s
+		
 		document.getElementById('checkout-btn').addEventListener('click', () => {
 		// Replace this placeholder action with your actual checkout logic
 		alert('Proceeding to checkout...');
@@ -860,7 +861,9 @@ let cart = [];
 		});
 		}
 
-		
+		document.getElementById('checkout-btn').addEventListener('click', function () {
+		window.location.href = 'cart.html';
+		});
 
 		// ----------------------------------------------------------
 
@@ -922,5 +925,166 @@ let cart = [];
             }
         });
         });
-// -----------------------------------------------Product description
+// -----------------------------------------------cart
 
+const cartProducts = [
+  {
+    id: 1,
+    image: 'assets/image/product/creamyhairmask.png', // Replace with actual product image path
+    name: 'Creamy Hair Mask',
+    price: 275,
+    quantity: 1
+  },
+  {
+    id: 2,
+    image: 'assets/image/product/osufimoisturiser.png', // Replace with actual product image path
+    name: 'Osufi Brightning Firming toner',
+    price: 475,
+    quantity: 1
+  }
+];
+
+const shippingCharge = 150;
+
+function renderCart() {
+  const cartItems = document.getElementById('cart-items');
+  cartItems.innerHTML = '';
+  let subtotal = 0;
+  let itemCount = 0;
+
+  cartProducts.forEach((prod, idx) => {
+    const prodSubtotal = prod.price * prod.quantity;
+    subtotal += prodSubtotal;
+    itemCount += prod.quantity;
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><img src="${prod.image}" alt="${prod.name}"></td>
+      <td>${prod.name}</td>
+      <td>৳ ${prod.price}</td>
+      <td>
+        <input type="number" min="1" class="qty-input" value="${prod.quantity}" onchange="updateQty(${idx}, this.value)">
+      </td>
+      <td>৳ ${prodSubtotal}</td>
+      <td>
+        <button class="action-btn" onclick="removeItem(${idx})">Remove</button>
+      </td>
+    `;
+    cartItems.appendChild(tr);
+  });
+
+  document.getElementById('summary-items-count').innerText = itemCount;
+  document.getElementById('summary-subtotal').innerText = `৳ ${subtotal}`;
+  document.getElementById('summary-shipping').innerText = `৳ ${shippingCharge}`;
+  document.getElementById('summary-total').innerText = `৳ ${subtotal + shippingCharge}`;
+}
+
+function updateQty(idx, value) {
+  cartProducts[idx].quantity = Math.max(1, Number(value));
+  renderCart();
+}
+
+function removeItem(idx) {
+  cartProducts.splice(idx, 1);
+  renderCart();
+}
+
+// Initial render
+document.addEventListener('DOMContentLoaded', renderCart);
+
+// Proceed to checkout button behavior--------------shopping cart:
+document.getElementById('checkout-btn').onclick = function() {
+  alert("Proceeding to checkout...");
+};
+
+
+
+// ---------------------------------------------------checkout
+
+// Sample order data simulating what you might carry from a cart
+const orderItems = [
+  { name: "Creamy Hair Mask", qty: 1, price: 275 },
+  { name: "Osufi Brightning Firming Toner", qty: 1, price: 475 }
+];
+
+const checkshippingCharge = 150;
+
+function formatCurrency(amount) {
+  return `৳ ${amount.toFixed(2)}`;
+}
+
+function renderOrderSummary() {
+  const tbody = document.getElementById('order-summary-body');
+  tbody.innerHTML = ''; // Clear previous
+
+  let subtotal = 0;
+  orderItems.forEach(item => {
+    const subtotalItem = item.qty * item.price;
+    subtotal += subtotalItem;
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td>${item.qty}</td>
+      <td>${formatCurrency(item.price)}</td>
+      <td>${formatCurrency(subtotalItem)}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  const orderTotalEl = document.getElementById('order-total');
+  const shippingEl = document.getElementById('shipping-charge');
+
+  shippingEl.textContent = formatCurrency(checkshippingCharge);
+  orderTotalEl.textContent = formatCurrency(subtotal + checkshippingCharge);
+}
+
+function handlePaymentOptions() {
+  const cardDetailsSection = document.getElementById('card-details');
+  const paymentRadioButtons = document.querySelectorAll('input[name="payment"]');
+
+  paymentRadioButtons.forEach(rb => {
+    rb.addEventListener('change', () => {
+      if (rb.value === 'card') {
+        cardDetailsSection.style.display = 'block';
+        setCardInputsRequired(true);
+      } else {
+        cardDetailsSection.style.display = 'none';
+        setCardInputsRequired(false);
+      }
+    });
+  });
+}
+
+function setCardInputsRequired(required) {
+  document.getElementById('cardnumber').required = required;
+  document.getElementById('expiry').required = required;
+  document.getElementById('cvv').required = required;
+}
+
+function setupFormSubmission() {
+  const form = document.getElementById('checkout-form');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    // Validate or process payment here
+
+    alert('Thank you for your order! Your skincare products will be shipped soon.');
+    form.reset();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderOrderSummary();
+  handlePaymentOptions();
+  setupFormSubmission();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('ptc-btn')?.addEventListener('click', () => {
+    window.location.href = 'checkout.html';
+  });
+
+  document.getElementById('shop-again-btn')?.addEventListener('click', () => {
+    window.location.href = 'index.html';
+  });
+});
