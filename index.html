@@ -277,26 +277,37 @@
 								</div> -->
 								<div class="header-right-item header-item">
 									<div class="header-account">
-										<div class="account" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasuseraccount" aria-controls="offcanvasuseraccount">
-											<img src="assets/image/user (4).png">
-											<label href="">Account</label>
-										</div>
-										<div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasuseraccount" aria-labelledby="offcanvasuseraccountLabel">
-											<div class="offcanvas-header mycart_header">
-											<h5 class="offcanvas-title mycart_title" id="offcanvasuseraccountLabel">Account</h5>
-											<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-											</div>
-											<div class="offcanvas-body mycart_body">
-											<div class="acoun_section">
-												<ul class="m-0 p-0">
-													<li class="offlogin d-flex"><a href="login.html">Sign In</a></li>
-													<li class="offca d-flex"><a href="register.html">Create Account</a></li>
-													<li class="offtrack d-flex"><a href="">Track Order</a></li>
-													<!-- <li class="d-flex" style="padding: 15px 10px;"><img src="assets/image/question.png" alt="" class="me-3" width="25"><a href="">Help Center</a></li> -->
-												</ul>
-											</div>
-											</div>
-										</div>
+                                        <div class="dropdown">
+                                            <div class="account downic dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/image/user (4).png">
+                                                <label href="">Account</label>
+                                            </div>
+                                             <ul class="dropdown-menu acoun_section m-0 p-0">
+                                                <li class="dropdown-item offlogin d-flex"><a href="login.html">Sign In</a></li>
+                                                <li class="dropdown-item offca d-flex"><a href="register.html">Create Account</a></li>
+                                                <li class="dropdown-item mypro d-flex"><a href="myprofile.html">My Profile</a></li>
+                                                <li class="dropdown-item offtrack d-flex"><a href="trackmyorder.html">Track Order</a></li>
+                                                <li class="dropdown-item order-details-off d-flex"><a href="orderdetails.html">Order details</a></li>
+                                            </ul>
+                                            <!-- <div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasuseraccount" aria-labelledby="offcanvasuseraccountLabel" width="200px">
+                                                <div class="offcanvas-header mycart_header">
+                                                <h5 class="offcanvas-title mycart_title" id="offcanvasuseraccountLabel">Account</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body mycart_body">
+                                                <div class="acoun_section">
+                                                    <ul class="m-0 p-0">
+                                                        <li class="offlogin d-flex"><a href="login.html">Sign In</a></li>
+                                                        <li class="offca d-flex"><a href="register.html">Create Account</a></li>
+                                                        <li class="offtrack d-flex"><a href="trackmyorder.html">Track Order</a></li>
+                                                        <li class="order-details-off d-flex"><a href="orderdetails.html">Order details</a></li>
+                                                        <li class="d-flex" style="padding: 15px 10px;"><img src="assets/image/question.png" alt="" class="me-3" width="25"><a href="">Help Center</a></li>
+                                                    </ul>
+                                                </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+										
 										<!-- <div class="account">
 											<i class="fa-solid fa-code-compare"></i>
 											<a href="">Compare</a>
@@ -341,7 +352,7 @@
 
 									</li>
 									<li class="nav-item dropdown dropdown-mega position-static">
-										<a href="" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" title="Shop By Skin type">Shop By Skin type</a>
+										<a href="" class="nav-link mmdoicon dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" title="Shop By Skin type">Shop By Skin type</a>
 										<div class="dropdown-menu mega-menu shadow">
 											<div class="mega-content-sbs">
 												<div class="container-fluid">
@@ -422,7 +433,7 @@
 									</li>
 									
 									<li class="nav-item dropdown dropdown-mega position-static">
-										<a href="" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" title="Shop By Category">Shop By Category</a>
+										<a href="" class="nav-link mmdoicon dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" title="Shop By Category">Shop By Category</a>
 										<div class="dropdown-menu mega-menu shadow" style="transform: translate3d(-160px, 42.4px, 0px) !important;">
 											<div class="mega-content">
 												<div class="container-fluid">

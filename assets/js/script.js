@@ -1087,4 +1087,53 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('shop-again-btn')?.addEventListener('click', () => {
     window.location.href = 'index.html';
   });
+
+  document.getElementById('back-to-shop-btn')?.addEventListener('click', () =>{
+	window.location.href = 'index.html';
+  })
 });
+
+
+// ------------------------------------------------enter otp
+
+const otpForm = document.getElementById('otp-form');
+const messageDiv = document.createElement('div');
+messageDiv.id = 'otp-message';
+messageDiv.style.marginTop = '12px';
+messageDiv.style.fontWeight = '600';
+messageDiv.style.textAlign = 'center';
+
+otpForm.appendChild(messageDiv);
+
+otpForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const otpInput = document.getElementById('otp').value.trim();
+
+  if (!/^\d{6}$/.test(otpInput)) {
+    messageDiv.textContent = 'Please enter a valid 6-digit OTP.';
+    messageDiv.style.color = 'red';
+    return;
+  }
+
+  // Simulate OTP Verification success
+  messageDiv.textContent = 'OTP Verified successfully! Proceeding...';
+  messageDiv.style.color = 'green';
+
+  // Further action or redirect goes here
+});
+
+document.getElementById('resend-btn').addEventListener('click', function() {
+  messageDiv.textContent = 'A new OTP has been sent to your registered contact.';
+  messageDiv.style.color = 'blue';
+
+  // Add actual resend OTP logic here
+});
+
+window.addEventListener('load', () => {
+  document.getElementById('otp').value = '';
+  const messageDiv = document.getElementById('otp-message');
+  if (messageDiv) {
+    messageDiv.textContent = '';
+  }
+});
+
