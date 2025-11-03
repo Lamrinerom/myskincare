@@ -1137,3 +1137,13 @@ window.addEventListener('load', () => {
   }
 });
 
+
+// --------------------------------------------------Sitemap
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.location.hash) {
+    const section = document.querySelector(window.location.hash);
+    if(section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});

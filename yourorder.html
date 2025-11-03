@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Registration | www.yourskincare.uk</title>
+    <title>Your Order | www.yourskincare.uk</title>
     <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
-     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/responsive.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -756,57 +756,59 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Login</li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
                     </ol>
                 </nav>
             </div>
         </div> -->
-
-        <section class="register-section">
+        
+        <section class="yourorder-section">
             <div class="container-fluid">
-                <div class="form-column">
-                    <div class="sec-title-common">
-                        <h2>Create Account</h2>
-                    </div>
-                    <div class="styled-form">
-                        <form id="registrationForm">
-                            <div class="form-group">
-                                <label class="field-label">First Name</label>
-                                <input type="text" id="firstname"  required>
-                            </div>
-                            <div class="form-group">
-                                <label class="field-label">Last Name</label>
-                                <input type="text" id="lastname"  required>
-                            </div>
-                            <div class="form-group">
-                                <label class="field-label">Email</label>
-                                <input type="email" id="email"  required>
-                            </div>
+                <div class="row">
+                    <div class="sec-title">
+						<h2>Your Order</h2>
+					</div>
+                    <main class="yourorder-container">
+                        <section class="yo-order-summary">
+                        <p class="yo-ordernumber">Order Number : <span class="yo-ordernumber-val">#YSCU123456</span></p>
+                        <p class="yo-orderdate">Order Date : <span class="yo-orderdate-val">04 Nov 2025</span></p>
+                        <p class="yo-orderstatus">Status : <span class="yo-status-processing">Processing</span> </p>
+                        </section>
 
-                            <div class="form-group">
-                                <label class="field-label">Password</label>
-                                <input type="password" id="password" required>
+                        <section class="yo-products-list">
+                        <h2 class="yo-section-title">Ordered Products</h2>
+                        <ul class="yo-product-items">
+                            <li class="yo-product-item">
+                            <img src="assets/image/product/collagen10000mg4x.png" alt="Collagen 10000mg 4X" class="yo-product-image" />
+                            <div class="yo-product-details">
+                                <p class="yo-product-name">Collagen 10000mg 4X (Pack of 3)</p>
+                                <p class="yo-product-qty">Quantity : <span class="yo-product-qty-val">1</span></p>
+                                <p class="yo-product-price">Price : <span class="yo-product-price-val">£35.99</span></p>
                             </div>
-
-                            <div class="form-group">
-                                <button type="submit" class="theme-btn">Create</button>
-                                <div class="submit-text">Returning customer? <a href="login.html">Sign In</a></div>
-								<!-- <div class="submit-text">Forgot Password? <a href="register.html">Reset it here</a></div> -->
+                            </li>
+                            <li class="yo-product-item">
+                            <img src="assets/image/product/vittamincollagenmixplus.png" alt="Vitamin Collagen Mix Plus" class="yo-product-image" />
+                            <div class="yo-product-details">
+                                <p class="yo-product-name">Vitamin Collagen Mix Plus</p>
+                                <p class="yo-product-qty">Quantity : <span class="yo-product-qty-val">2</span></p>
+                                <p class="yo-product-price">Price : <span class="yo-product-price-val">£27.99 each</span></p>
                             </div>
-                        </form>
-                    </div> 
+                            </li>
+                        </ul>
+                        </section>
 
-                    <!-- <div class="social-links-two">
-                        <a href="#" class="facebook"></a>
-                       
-                        <a href="#" class="whatsapp"></a>
+                        <section class="yo-payment-summary">
+                        <p class="yo-payment-subtotal">Subtotal : <span class="yo-payment-subtotal-val">£91.97</span></p>
+                        <p class="yo-payment-shipping">Shipping : <span class="yo-payment-shipping-val">£5.00</span></p>
+                        <p class="yo-payment-total yo-total-amount">Total : <span class="yo-payment-total-val">£96.97</span></p>
+                        </section>
 
-						 <a href="#" class="twitter"></a>
-                    </div> -->
+                        <button id="yo-back-btn" class="yo-back-btn">Back to Shop</button>
+                    </main>
+                    
                 </div>
             </div>
         </section>
-
 
 		<div class="bottom-parallax">
 			<footer class="main-footer">
@@ -970,21 +972,6 @@
 		</div>
 	</div>
     </div>
-    <script>
-        document.getElementById('registrationForm').addEventListener('submit', function(event){
-            event.preventDefault();
-            let name = document.getElementById('name').value.trim();
-            let email = document.getElementById('email').value.trim();
-            let password = document.getElementById('password').value.trim();
-
-            if(name && email && password){
-                alert(`Registration Successful!\nName: ${name}\nEmail: ${email}`);
-                this.reset();
-            } else {
-                alert('Please fill all fields correctly.');
-            }
-        });
-    </script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/jquery.fancybox.js"></script>
 	<script src="assets/js/appear.js"></script>

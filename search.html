@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Registration | www.yourskincare.uk</title>
+    <title>Search Product | www.yourskincare.uk</title>
     <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
-     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/responsive.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -756,57 +756,397 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Login</li>
+                        <li class="breadcrumb-item active" aria-current="page">All Product</li>
                     </ol>
                 </nav>
             </div>
         </div> -->
-
-        <section class="register-section">
+        <section class="search-section-page">
             <div class="container-fluid">
-                <div class="form-column">
-                    <div class="sec-title-common">
-                        <h2>Create Account</h2>
-                    </div>
-                    <div class="styled-form">
-                        <form id="registrationForm">
-                            <div class="form-group">
-                                <label class="field-label">First Name</label>
-                                <input type="text" id="firstname"  required>
-                            </div>
-                            <div class="form-group">
-                                <label class="field-label">Last Name</label>
-                                <input type="text" id="lastname"  required>
-                            </div>
-                            <div class="form-group">
-                                <label class="field-label">Email</label>
-                                <input type="email" id="email"  required>
-                            </div>
+                <div class="row">
+                     <div class="sec-title">
+						<h2>Search Product</h2>
+					</div>
+					<div class="col-xl-2">
+						<div class="filter-sidebar">
+							<!-- <h5 class="mb-3">Filter By</h5> -->
+							<div class="filter-section mb-4">
+								<h6 class="filtitle">Category</h6>
+								<ul class="p-0">
+									<li><a href="#">Facewash</a></li>
+									<li><a href="#">Moisturizers</a></li>
+									<li><a href="#">Serums & Treatments</a></li>
+									<li><a href="#">Masks & Peels</a></li>
+									<li><a href="#">Eye Care</a></li>
+									<li><a href="#">Sunscreens</a></li>
+									<li><a href="#">Kits & Combos</a></li>
+								</ul>
+							</div>
+							<div class="filter-section mb-4">
+								<h6 class="filtitle">Skin Type</h6>
+								<ul class="p-0">
+									<li><a href="#">Oily</a></li>
+									<li><a href="#">Dry</a></li>
+									<li><a href="#">Combination</a></li>
+									<li><a href="#">Sensitive</a></li>
+								</ul>
+							</div>
+							<div class="filter-section mb-4">
+								<h6 class="filtitle">Ratings</h6>
+								<ul class="p-0">
+									<li><a href="#">4 stars & above</a></li>
+									<li><a href="#">3 stars & above</a></li>
+									<li><a href="#">2 stars & above</a></li>
+									<li><a href="#">1 star & above</a></li>
+								</ul>
+							</div>
+							<div class="filter-section mb-4">
+								<h6 class="filtitle">Ingredients</h6>
+								<ul class="p-0">
+									<li><a href="#">Hyaluronic Acid</a></li>
+									<li><a href="#">Vitamin C</a></li>
+									<li><a href="#">Retinol</a></li>
+									<li><a href="#">Niacinamide</a></li>
+									<li><a href="#">Salicylic Acid</a></li>
+									<li><a href="#">Ceramides</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-10">
+						<div class="row">
+							<div class="col-lg-3 allproduct-card-member" 
+								data-category="Facewash"
+								data-skin-type="Oily" 
+								data-rating="2.3"
+								data-ingredient="Hyaluronic Acid,Ceramides">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/auraskinlabqluta+b3brightingsoap.png" alt="Aura Skin Lab Qluta + B3 Brightning Soap" title="Aura Skin Lab Qluta + B3 Brightning Soap">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Aura Skin Lab Qluta + B3 Brightning Soap" data-price="650" data-image="assets/image/product/auraskinlabqluta+b3brightingsoap.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+										<div class="lower-content">
+											<a href="productdetails.html"><h6>Aura Skin Lab Qluta + B3 Brightning Soap</h6></a>
 
-                            <div class="form-group">
-                                <label class="field-label">Password</label>
-                                <input type="password" id="password" required>
-                            </div>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
 
-                            <div class="form-group">
-                                <button type="submit" class="theme-btn">Create</button>
-                                <div class="submit-text">Returning customer? <a href="login.html">Sign In</a></div>
-								<!-- <div class="submit-text">Forgot Password? <a href="register.html">Reset it here</a></div> -->
-                            </div>
-                        </form>
-                    </div> 
-
-                    <!-- <div class="social-links-two">
-                        <a href="#" class="facebook"></a>
-                       
-                        <a href="#" class="whatsapp"></a>
-
-						 <a href="#" class="twitter"></a>
-                    </div> -->
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1">100% soap-free cleansing | For sensitive skin</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member"
+								data-category="Cleansers"
+								data-skin-type="Sensitive" 
+								data-rating="2.3"
+								data-ingredient="Hyaluronic Acid,Ceramides">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/collagen10000mg4x.png" alt="Collagen Pink Glow Plus 10000mg" title="Collagen Pink Glow Plus 10000mg">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Collagen Pink Glow Plus 10000mg" data-price="650" data-image="assets/image/product/collagen10000mg4x.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6 >Collagen Pink Glow Plus 10000mg</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1">Exfoliates & brightens | For dull, tired skin</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member" data-category="Cleansers" data-skin-type="Sensitive">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/creamyhairmask.png" alt="Creamy Hair Mask" title="Creamy Hair Mask">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Creamy Hair Mask" data-price="650" data-image="assets/image/product/creamyhairmask.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6 >Creamy Hair <br> Mask</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1"> Cleanses, removes makeup | For all skin types</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member" data-category="Masks & Peels" data-skin-type="Sensitive">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/fairyhoneysoap.png" alt="Fairy Honey Soap" title="Fairy Honey Soap">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Fairy Honey Soap" data-price="650" data-image="assets/image/product/fairyhoneysoap.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6>Fairy Honey <br> Soap</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1"> Removes impurities, brightens | For dull skin</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member" data-category="Moisturizers" data-skin-type="Oily">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/osufimoisturiser.png" alt="Osufi Brightning Firming toner" title="Osufi Brightning Firming toner">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Osufi Brightning Firming toner" data-price="650" data-image="assets/image/product/osufimoisturiser.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6>Osufi Brightning Firming <br> toner</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1"> Hydrating SPF 15 UVA+UVB | For all skin types</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member" data-category="Serums & Treatments" data-skin-type="Dry">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/l-gluta5berryplusdietarysupplementproduct.png" alt="L-Gluta 5 Berry Plus Dietary Supplement" title="L-Gluta 5 Berry Plus Dietary Supplement">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="L-Gluta 5 Berry Plus Dietary Supplement" data-price="650" data-image="assets/image/product/l-gluta5berryplusdietarysupplementproduct.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6>L-Gluta 5 Berry Plus Dietary Supplement</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1"> Brightening | For all skin types</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member" data-category="Sunscreens" data-skin-type="Combination">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/vittamincollagenmixplus.png" alt="Vitamin Collagen Mix Plus" title="Vitamin Collagen Mix Plus">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Vitamin Collagen Mix Plus" data-price="650" data-image="assets/image/product/vittamincollagenmixplus.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6>Vitamin Collagen <br> Mix Plus</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1"> Brightening | For all skin types</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 allproduct-card-member" data-category="Cleansers" data-skin-type="Sensitive ">
+								<div class="inner-box wow fadeIn mb-4">
+									<div class="image-box">
+										<figure class="imagebestseller">
+											<img src="assets/image/product/yanahairoil.png" alt="Yana Hair Oil" title="Yana Hair Oil">
+										</figure>
+										<ul class="social-icon-two">
+											<li><span tooltip="Add to Cart" flow="left">
+													<a href="javascript:void(0)" class="cd_btn" data-name="Yana Hair Oil" data-price="650" data-image="assets/image/product/yanahairoil.png">
+													<i class="fa-solid fa-cart-shopping"></i>
+														</a>
+												</span>
+											</li>
+										</ul>
+									
+										<div class="lower-content">
+											<!-- <div class="designation"><a href="product-by-category.html">Freezer</a></div> -->
+											<a href="productdetails.html"><h6>Yana Hair <br> Oil</h6></a>
+											<!-- Price section -->
+											<div class="product-pricing">
+												<span class="current-price">৳275</span>
+												<span class="previous-price">৳₹350</span>
+											</div>
+											<div class="specification-list">
+												<ul class="p-0">
+													<li><span class="sp-1"> Cleanses, removes makeup | For all skin types</span></li>
+												</ul>
+											</div>
+											<div class="row_rating">
+												<div class="Stars" style="--rating: 2.3;" aria-label="Rating of this product is 2.3 out of 5."></div>
+												<span class="rating-number">2.3/5</span>
+											</div>
+											<!-- <div class="text">As more and more people are turning to organic</div> -->
+										</div>
+										<div class="explore_btn">
+											<a href="productdetails.html">View Product</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
-            </div>
+            </div>  
         </section>
-
 
 		<div class="bottom-parallax">
 			<footer class="main-footer">
@@ -867,7 +1207,7 @@
 											<li><a href="termsandconditions.html">Terms & Condition</a></li>
 											<li><a href="trackmyorder.html">Track My Order</a></li>
 											<li><a href="faq.html">FAQ</a></li>
-											<li><a href="sitemap.html">Site Map</a></li>
+                                            <li><a href="sitemap.html">Site Map</a></li>
 										</ul>
 									</div>
 								</div>
@@ -947,7 +1287,8 @@
 				</div>
 			</footer>
 		</div>
-		<div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasMycart" aria-labelledby="offcanvasMycartLabel">
+    </div>
+	<div class="offcanvas offcanvas-end mycart_ofcanva" tabindex="-1" id="offcanvasMycart" aria-labelledby="offcanvasMycartLabel">
 		<div class="offcanvas-header mycart_header">
 		<p class="offcanvas-title mycart_title" id="offcanvasMycartLabel">Shopping Cart</p>
 		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -969,22 +1310,172 @@
 			</button>
 		</div>
 	</div>
-    </div>
-    <script>
-        document.getElementById('registrationForm').addEventListener('submit', function(event){
-            event.preventDefault();
-            let name = document.getElementById('name').value.trim();
-            let email = document.getElementById('email').value.trim();
-            let password = document.getElementById('password').value.trim();
+	<div id="toast-container" style="position:fixed;bottom:30px;right:30px;z-index:999;"></div>
+	<div id="cart-items"></div>
+	<span id="cart-count"></span>
+	<span id="cart-total"></span>
+	<!-- Loader and No Product Message (inside main product section) -->
+	<div id="product-loader" style="display:none;text-align:center;margin:20px 0;">
+	<span class="loader"></span>
+	</div>
+	<div id="no-product-message" style="display:none;text-align:center;color:#777;margin:24px 0;font-size:18px;">
+	No product available
+	</div>
+	<script>
+		const filterSidebar = document.querySelector('.filter-sidebar');
+		const productCards = document.querySelectorAll('.allproduct-card-member');
 
-            if(name && email && password){
-                alert(`Registration Successful!\nName: ${name}\nEmail: ${email}`);
-                this.reset();
-            } else {
-                alert('Please fill all fields correctly.');
-            }
-        });
-    </script>
+		// Create Clear All button
+		const clearButton = document.createElement('button');
+		clearButton.innerText = 'Clear All Filters';
+		clearButton.className = 'clear-filters-btn';
+		filterSidebar.insertBefore(clearButton, filterSidebar.firstChild);
+
+		// Filter state
+		let filters = {
+		category: '',
+		skinType: '',
+		price: '',
+		brand: '',
+		rating: '',
+		ingredient: ''
+		};
+
+		// Add radio circles to filter links
+		function addRadioCircles() {
+		filterSidebar.querySelectorAll('ul li a').forEach(link => {
+			const text = link.innerText;
+			link.innerHTML = `
+			<label style="display:flex;align-items:center;cursor:pointer;width:100%;justify-content:space-between;">
+				${text}
+				<span class="custom-radio"></span>
+			</label>
+			`;
+		});
+		}
+		addRadioCircles();
+
+		// Event listeners for sidebar filters
+		filterSidebar.querySelectorAll('ul li a').forEach(link => {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			const section = this.closest('.filter-section');
+			const filterGroup = section.querySelector('h6').innerText.toLowerCase();
+			const filterValue = this.querySelector('label').innerText.trim();
+
+			// Remove active class from siblings in group
+			section.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+			// Add active to clicked
+			this.classList.add('active');
+
+			// Update filter state
+			switch(filterGroup) {
+			case 'category':      filters.category = filterValue; break;
+			case 'skin type':     filters.skinType = filterValue; break;
+			case 'price':         filters.price = filterValue; break;
+			case 'brand':         filters.brand = filterValue; break;
+			case 'ratings':       filters.rating = filterValue; break;
+			case 'ingredients':   filters.ingredient = filterValue; break;
+			}
+
+			applyFilters();
+		});
+		});
+
+		// Clear all filters button
+		clearButton.addEventListener('click', function() {
+		Object.keys(filters).forEach(key => filters[key] = '');
+		filterSidebar.querySelectorAll('a.active').forEach(a => a.classList.remove('active'));
+		productCards.forEach(card => { card.style.display = ''; });
+		let existingMsg = document.getElementById('no-product-msg');
+		if (existingMsg) existingMsg.remove();
+		});
+
+		// Show loading spinner
+		function showLoading(callback) {
+		let loader = document.getElementById('filter-loader');
+		if (loader) loader.remove();
+		loader = document.createElement('div');
+		loader.id = 'filter-loader';
+		loader.innerHTML = `<span></span> Loading...`;
+		const cardsParent = document.querySelector('.allproduct-card-member').parentNode;
+		cardsParent.insertBefore(loader, cardsParent.firstChild);
+		setTimeout(() => {
+			loader.remove();
+			if (typeof callback === 'function') callback();
+		}, 600);
+		}
+
+		// Show "no products" message
+		function showNoProductMessage() {
+		let existingMsg = document.getElementById('no-product-msg');
+		if (existingMsg) existingMsg.remove();
+		const msg = document.createElement('div');
+		msg.id = 'no-product-msg';
+		msg.textContent = "No products available in this section";
+		const cardsParent = document.querySelector('.allproduct-card-member').parentNode;
+		cardsParent.insertBefore(msg, cardsParent.firstChild);
+		}
+
+		// Main filter function (adjusted only for loading & message)
+		function applyFilters() {
+		// Show loading, then apply filters!
+		showLoading(() => {
+			let visibleCount = 0;
+			productCards.forEach(card => {
+			const category = card.getAttribute('data-category');
+			const skinType = card.getAttribute('data-skin-type');
+			const price = parseFloat(card.getAttribute('data-price'));
+			const brand = card.getAttribute('data-brand');
+			const rating = parseFloat(card.getAttribute('data-rating'));
+			const ingredients = card.getAttribute('data-ingredient');
+			let isVisible = true;
+
+			if (filters.category && category !== filters.category)            isVisible = false;
+			if (filters.skinType && skinType !== filters.skinType)            isVisible = false;
+			if (filters.price) {
+				const priceRanges = {
+				'$0 - $50': [0, 50],
+				'$51 - $100': [51, 100],
+				'$101 - $150': [101, 150],
+				'$151 - $200': [151, 200],
+				'$201 and above': [201, Infinity]
+				};
+				const range = priceRanges[filters.price];
+				if (range && !(price >= range[0] && price <= range[1]))         isVisible = false;
+			}
+			if (filters.brand && brand !== filters.brand)                     isVisible = false;
+			if (filters.rating) {
+				const minRating = parseInt(filters.rating.split(' ')[0]);
+				if (rating < minRating)                                         isVisible = false;
+			}
+			if (filters.ingredient && ingredients) {
+				const ingredientList = ingredients.split(',').map(i => i.trim());
+				if (!ingredientList.includes(filters.ingredient))               isVisible = false;
+			}
+
+			card.style.display = isVisible ? '' : 'none';
+			if (isVisible) visibleCount++;
+			});
+
+			let existingMsg = document.getElementById('no-product-msg');
+			if (visibleCount === 0) {
+			if (!existingMsg) showNoProductMessage();
+			} else {
+			if (existingMsg) existingMsg.remove();
+			}
+		});
+		}
+
+		// Show all products on page load
+		document.addEventListener('DOMContentLoaded', function() {
+		productCards.forEach(card => {
+			card.style.display = '';
+		});
+		});
+
+
+	</script>
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/jquery.fancybox.js"></script>
 	<script src="assets/js/appear.js"></script>
@@ -993,5 +1484,7 @@
 	<script src="assets/js/slick.js"></script>
 	<script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	
+
   </body>
 </html>
